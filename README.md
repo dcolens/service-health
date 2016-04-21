@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/dcolens/service-health.svg?branch=master)](https://travis-ci.org/dcolens/service-health) [![Coverage Status](https://coveralls.io/repos/github/dcolens/service-health/badge.svg?branch=master)](https://coveralls.io/github/dcolens/service-health?branch=master)
+
 Express middleware that checks if the last `consecutiveFailures` runs of a route failed, it helps keep track of the health of a service without generating extra load.
 
 A route failure is defined as response status code being above `failThreshold`.
