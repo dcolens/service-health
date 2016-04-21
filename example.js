@@ -5,10 +5,10 @@
 var express = require('express');
 var app = express();
 
-var health = require('./api-health.js');
+var health = require('./index.js');
 
 health.set({
-    consecutiveFailures: 10, 
+    consecutiveFailures: 5, 
     failThreshold: 500
 });
 

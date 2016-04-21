@@ -13,7 +13,7 @@ If there are `consecutiveFailures` consecutive failures, the health is considere
 var express = require('express');
 var app = express();
 
-var health = require('./api-health.js');
+var health = require('service-health.js');
 
 health.set({
     consecutiveFailures: 10, 
