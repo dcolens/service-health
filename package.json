@@ -1,0 +1,22 @@
+{
+  "name": "service-health",
+  "version": "1.0.0",
+  "description": "show if the last X runs of a service failed",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "cover": "istanbul cover _mocha -- test/*.js",
+    "lint": "jshint -c .jshintrc --exclude ./node_modules ."
+  },
+  "author": "Didier Colens <dcolens@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcolens/service-health.git"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
+  }
+}
